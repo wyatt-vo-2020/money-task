@@ -1,0 +1,24 @@
+{
+  "transaction": [
+    {
+      "id": 1,
+      "name": "Go 1",
+      "price": 10000
+    },
+    {
+      "id": 2,
+      "name": "Go 2",
+      "price": 20000
+    },
+    {
+      "id": 3,
+      "name": "Go 3",
+      "price": 3000000
+    },
+    {
+      "id": 4,
+      "name": "Go 4",
+      "price": 3000000
+    }
+  ]
+}
