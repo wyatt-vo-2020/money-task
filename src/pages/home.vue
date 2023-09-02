@@ -36,7 +36,7 @@ export default {
     );
     // watch giam sat mot thuoc tinh nao do cua data
     // watch co tham so
-    // watch thuc hien khi doi tuong giam sat thay doi
+    // watch chi thuc hien khi doi tuong giam sat thay doi
     watch(searchText, (newValue, oldValue) => {
       console.log(newValue, oldValue);
     });
@@ -44,6 +44,7 @@ export default {
     // Ko nhan tham so dau vao ma track doi tuong nao do trong data
     // Thuc hien khi bien phu thuoc thay doi
     // Khac voi computed o cho trong return lai gia tri
+    // Se chay it nhat mot lan du dependencies co thay doi hay khong
     watchEffect(() => {
       if (searchText.value) {
         console.log("run again");
