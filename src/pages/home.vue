@@ -11,7 +11,7 @@
   <button @click="onChangeSomething">Click</button>
 </template>
 <script>
-import { computed, ref, reactive } from "vue";
+import { watch, computed, ref, reactive } from "vue";
 export default {
   setup() {
     const searchText = ref("");
@@ -31,6 +31,9 @@ export default {
         })
         .filter((customer) => customer.includes(searchText.value.toLowerCase()))
     );
+    watch(searchText, (newValue, oldValue) => {
+      console.log(newValue, oldValue);
+    });
     return { searchText, customersFilled };
   },
 };
