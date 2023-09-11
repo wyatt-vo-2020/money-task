@@ -1,5 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-// eslint-disable-next-line vue/multi-word-component-names
+<!-- OLD CODE -->
+<!-- // eslint-disable-next-line vue/multi-word-component-names
 <template>
   <h1>Home Page</h1>
   <input type="text" v-model="searchText" />
@@ -63,8 +64,26 @@ export default {
     return { searchText, customersFilled };
   },
 };
-</script>
+</script> -->
 
 <!-- <style>
 
 </style> -->
+
+<!-- NEW CODE -->
+<template>
+  <h1>Overview</h1>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  created() {
+    console.log(this.$store.state.count);
+    this.count = this.$store.state.count;
+  },
+};
+</script>
