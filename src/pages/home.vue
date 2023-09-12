@@ -73,17 +73,20 @@ export default {
 <!-- NEW CODE -->
 <template>
   <h1>Overview</h1>
+  <button @click="diy.setCount">Show me</button>
 </template>
 <script>
 export default {
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  created() {
-    console.log(this.$store.state.count);
-    this.count = this.$store.state.count;
-  },
+  // data() {
+  //   return {
+  //     count: 0,
+  //   };
+  // },
+  // created() {
+  //   console.log(this.$store.state.count);
+  //   this.count = this.$store.state.count;
+  // },
+  inject: ["diy"],
+  created() {},
 };
 </script>
